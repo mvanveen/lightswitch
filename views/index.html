@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      body {
+        background-color:#24394E;
+        color: white;
+        font-family: "Helvetica Neue";
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        background-color: rgba(30, 30, 30, .2);
+      }
+
+      .btn {
+        border: none;
+        background: #34495e;
+        color: white;
+        font-size: 16.5px;
+        text-decoration: none;
+        text-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: 0.25s;
+        -moz-transition: 0.25s;
+        -o-transition: 0.25s;
+        transition: 0.25s;
+        -webkit-backface-visibility: hidden; }
+        .btn:hover, .btn:focus {
+
+          background-color: #4e6d8d;
+          color: white;
+          -webkit-transition: 0.25s;
+          -moz-transition: 0.25s;
+          -o-transition: 0.25s;
+          transition: 0.25s;
+          -webkit-backface-visibility: hidden; }
+        .btn:active, .btn.active {
+          background-color: #2c3e50;
+          color: rgba(255, 255, 255, 0.75);
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none; }
+        .btn.disabled, .btn[disabled] {
+          background-color: #95a5a6;
+          color: white; }
+        .btn.btn-large {
+          padding-bottom: 12px;
+          padding-top: 13px; }
+        .btn.btn-primary {
+          background-color: #1abc9c; }
+          .btn.btn-primary:hover, .btn.btn-primary:focus {
+            background-color: #2fe2bf; }
+          .btn.btn-primary:active, .btn.btn-primary.active {
+            background-color: #16a085; }
+        .btn.btn-info {
+          background-color: #3498db; }
+          .btn.btn-info:hover, .btn.btn-info:focus {
+            background-color: #5dade2; }
+          .btn.btn-info:active, .btn.btn-info.active {
+            background-color: #2383c4; }
+        .btn.btn-danger {
+          background-color: #e74c3c; }
+          .btn.btn-danger:hover, .btn.btn-danger:focus {
+            background-color: #ec7063; }
+          .btn.btn-danger:active, .btn.btn-danger.active {
+            background-color: #dc2d1b; }
+        .btn.btn-success {
+          background-color: #2ecc71; }
+          .btn.btn-success:hover, .btn.btn-success:focus {
+            background-color: #55d98d; }
+          .btn.btn-success:active, .btn.btn-success.active {
+            background-color: #27ad60; }
+        .btn.btn-warning {
+          background-color: #f1c40f; }
+          .btn.btn-warning:hover, .btn.btn-warning:focus {
+            background-color: #f4d03f; }
+          .btn.btn-warning:active, .btn.btn-warning.active {
+            background-color: #cea70c; }
+        .btn-toolbar .btn {
+          font-size: 18px;
+          padding: 10px 14px 9px; }
+          .btn-toolbar .btn:first-child {
+            -webkit-border-radius: 6px 0 0 6px;
+            -moz-border-radius: 6px 0 0 6px;
+            border-radius: 6px 0 0 6px; }
+          .btn-toolbar .btn:last-child {
+            -webkit-border-radius: 0 6px 6px 0;
+            -moz-border-radius: 0 6px 6px 0;
+            border-radius: 0 6px 6px 0; }
+
+          .toggle .toggle-radio {
+            background: url("../images/toggle/icon-on.png") right top no-repeat;
+            color: #1abc9c;
+            display: block;
+            font-weight: 700;
+            height: 21px;
+            left: 120%;
+            margin-left: -13px;
+            padding: 5px 32px 3px;
+            position: relative;
+            text-align: center;
+            z-index: 2;
+            -webkit-transition: 0.25s;
+            -moz-transition: 0.25s;
+            -o-transition: 0.25s;
+            transition: 0.25s;
+            -webkit-backface-visibility: hidden; }
+            .toggle .toggle-radio:first-child {
+              margin-bottom: -29px;
+              left: 0; }
+          .toggle input {
+            display: none;
+            position: absolute;
+            outline: none !important;
+            display: block\9;
+            opacity: 0.01;
+            filter: alpha(opacity=1);
+            zoom: 1; }
+          .toggle.toggle-icon {
+            border-radius: 6px 7px 7px 6px; }
+            .toggle.toggle-icon.toggle-off {
+              border-radius: 7px 6px 6px 7px; }
+              .toggle.toggle-icon.toggle-off .toggle-radio {
+                background-image: url("../images/toggle/block-off.png");
+                background-position: 0 0; }
+            .toggle.toggle-icon .toggle-radio {
+              background-image: url("../images/toggle/block-on.png");
+              background-position: 62px 0;
+              border-radius: 6px;
+              min-width: 27px;
+              text-align: right; }
+              .toggle.toggle-icon .toggle-radio:first-child {
+                text-align: left; }
+
+    path {
+      fill: #64798E;
+    }
+
+    </style>
+  </head>
+
+  <body>
+<h1 style='text-align:center;color:#d4e9fE'>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="80.011px" height="100px" viewBox="0 0 80.011 100" enable-background="new 0 0 80.011 100" xml:space="preserve" style='position:relative;top:1px;'>
+    <path d="M73.144,14.856c-3.605-3.634-8.613-5.868-14.135-5.868c-2.58,0-5.035,0.513-7.297,1.401l-7.046-7.046l0,0  c-1.442-1.457-3.454-2.345-5.66-2.345c-1.471,0-2.872,0.417-4.051,1.11L33.43,0.583C33.07,0.222,32.557,0,32.016,0  c-1.11,0-1.998,0.888-1.998,1.998c0,0.555,0.208,1.054,0.583,1.415l1.526,1.526c-0.583,0.999-0.957,2.122-1.068,3.343  c-11.277,2.733-18.782,7.712-22.833,15.148C0,38.521,8.989,58.746,16.923,76.599c1.942,4.355,3.829,8.586,5.271,12.4  c-5.507,0-12.387,0-15.175,0C2.011,89,0,100,0,100h60.008c0,0-1.997-11.001-7.005-11.001c-3.76,0-14.898,0-20.169,0  c-1.665-4.979-4.12-10.5-6.77-16.465c-7.005-15.73-14.926-33.556-9.058-44.32c2.857-5.271,9.294-8.878,19.087-10.806l4.3,4.3  c-0.888,2.261-1.387,4.716-1.387,7.296c0,5.521,2.247,10.501,5.854,14.135l9.904-9.904c1.082,1.082,2.594,1.762,4.244,1.762  c3.315,0,5.992-2.691,5.992-5.993c0-1.665-0.666-3.163-1.747-4.245L73.144,14.856z"/>
+    <g>
+      <path d="M57.011,47.996c0,1.11,0.889,1.998,1.998,1.998s1.998-0.888,1.998-1.998V37.994h-3.996V47.996z"/>
+      <path d="M78.013,26.994H68.012v4.009h10.001c1.096,0,1.998-0.902,1.998-1.998C80.011,27.896,79.109,26.994,78.013,26.994z"/>
+      <path d="M74.421,41.573l-7.075-7.047l-2.829,2.816l7.088,7.061c0.777,0.791,2.025,0.791,2.816,0c0.776-0.777,0.776-2.039,0-2.816   V41.573z"/>
+    </g>
+    </svg>
+  <span style='position:relative;top:-12px;left:-2px;'>lightswitch</span>
+</h1>
+<div class='row-fluid'>
+  <div class='span6 offset3' style='background-color:#2c3e50;margin-top:70px;border-radius:5px;height:80%;'>
+<div class='row-fluid' style='padding-top:5%;'>
+  <div class='span10 offset1' >
+    <h1><a href='#' class='btn btn-block btn-large'>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style='position:relative;left:-150px;'>
+<g id="Captions">
+</g>
+<g id="Your_Icon">
+  <path d="M51.242,88.578c2.496-2.713,4.81-11.264,6.207-18.728H35.814c-0.607,3.068-2.771,13.264-5.785,18.728H51.242z"/>
+  <path d="M51.873,5.463L28.646,35.649v48.724c2.033-5.099,3.699-12.525,4.378-16.229l-0.013-17.27l0.103-0.151l22.72-32.995"/>
+  <rect x="36.074" y="53.518" width="21.313" height="13.276"/>
+  <polygon points="58.062,50.462 76.681,19.811 57.66,19.811 36.966,50.462  "/>
+  <polygon points="77.607,16.752 73.183,5 54.5,5 58.222,16.752  "/>
+  <path d="M26.259,91.06h26.997c0,0,0-0.905,0-2.035c2.758-4.096,3.316-7.871,3.316-7.871V95h-34.18V29.042h8.779l-3.698,4.527   h-1.215V91.06z"/>
+</g>
+</svg>
+
+    <span style='position:relative;top:-35px;font-size:3em;'>Fiat Lux</span><br />
+    <span style='font-size:.8em;position:relative;top:-25px;left:55px;'>(let there be light)</span>
+
+  </a></h1>
+
+  </div>
+  </div>
+<div class='row-fluid' style='padding-top:5%;'>
+  <div class='span10 offset1'>
+  <div class='span5 offset1' >
+    <h1>00:00:00</h2>
+    <p>current toggle downtime</p>
+    <br />
+     <h1>00:00:00</h2>
+    <p>current toggle downtime</p>
+ <br />
+ <h1>00:00:00</h2>
+    <p>total uptime this month </p>
+ <br />
+
+  </div>
+  <div class='span6' style='text-align:center'>
+  cool total uptime graph goes here
+ 
+   <h1>15.00 <span style='font-size:.5em'>kWhr</span></h1> 
+    <p>used so far this month</p>
+
+
+  </div>
+
+</div>  
+</div>
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
