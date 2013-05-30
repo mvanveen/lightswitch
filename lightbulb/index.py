@@ -4,9 +4,10 @@ from bottle import static_file
 import bottle as app
 import pystache
 
-#from lightbulb.lightbulb import Lightbulb
+from lightbulb.lightbulb import Lightbulb
 
-#light = Lightbulb()
+
+light = Lightbulb()
 
 STATIC_PATH = os.path.abspath(
   os.path.join(os.path.abspath(__file__), '../../assets')
@@ -43,5 +44,3 @@ def handle_toggle():
     'success': True,
     'on': state
   }
-
-app.run(host='0.0.0.0')
